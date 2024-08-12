@@ -6,7 +6,7 @@ type TextState = {
 };
 
 const initialState: TextState = {
-  text: '',
+  text: `In a hole in the ground there lived a hobbit.`.toLowerCase().replace(/[.,:-]/g, ''),
   inputText: ''
 };
 

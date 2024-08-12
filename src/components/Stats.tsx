@@ -52,11 +52,11 @@ const Stats: React.FC = () => {
   }, [isTimerOn]);
 
   return (
-    <Box w='100%' mb={4}>
+    <Box w='100%' bgColor='gray.100' borderRadius='md' p='4' mb={4}>
       <Text fontSize='xl'>Errors: {errorsCount}</Text>
       <Text fontSize='xl'>Time: {seconds} seconds</Text>
       {isFinished && (
-        <Text fontSize='2xl'>Speed: {getSpeed()} WPM</Text>
+        <Text fontSize='xl'>Speed: {getSpeed()} WPM</Text>
       )}
     </Box>
   )

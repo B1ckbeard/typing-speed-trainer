@@ -13,7 +13,7 @@ const TextInput: React.FC = () => {
 
   return (
     <Box w='100%' mb={4}>
-      <Textarea w='100%' h='300px' fontSize='2xl'
+      <Textarea w='100%' h='300px' fontSize='2xl'bgColor="white"
         autoFocus
         placeholder='Type here...'
         value={inputText}
