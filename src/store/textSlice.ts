@@ -15,7 +15,7 @@ const textSlice = createSlice({
   initialState,
   reducers: {
     setText(state, action: PayloadAction<string>) {
-      state.text = action.payload;
+      state.text = action.payload.toLowerCase().replace(/[.,:-]/g, '');
     },
     setInputText(state, action: PayloadAction<string>) {
       state.inputText = action.payload;

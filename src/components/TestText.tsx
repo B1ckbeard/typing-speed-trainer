@@ -1,19 +1,9 @@
-import React, { useEffect, useMemo } from 'react';
-import { useAppDispatch, useAppSelector } from '../hooks';
-//import { setText } from '../store/textSlice';
+import React, { useMemo } from 'react';
+import { useAppSelector } from '../hooks';
 import { Box, Text } from '@chakra-ui/react'
 
 const TestText: React.FC = () => {
-  //const dispatch = useAppDispatch();
   const {text, inputText } = useAppSelector((state) => state.textSlice);
-
-  // сделать массив из текста + вставка своего
-  //const testText = `In a hole in the ground there lived a hobbit.`.toLowerCase().replace(/[.,:-]/g, '');
-/*
-  useEffect(() => {
-    dispatch(setText(testText));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);*/
 
   const getColoredText = useMemo((): JSX.Element[] => {
     return text.split('').map((char, index) => {

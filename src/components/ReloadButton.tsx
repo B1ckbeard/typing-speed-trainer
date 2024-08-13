@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Button } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import { RepeatIcon } from '@chakra-ui/icons'
 import { useAppDispatch } from '../hooks';
 import { setInputText } from '../store/textSlice';
@@ -16,13 +16,9 @@ const ReloadButton: React.FC = () => {
   };
 
   return (
-    <Box w="100%">
-      <Flex justifyContent="center" alignItems="center">
-        <Button leftIcon={<RepeatIcon />} colorScheme='gray' onClick={handleButtonClick}>
-          Reload
-        </Button>
-      </Flex>
-    </Box>
+    <Button leftIcon={<RepeatIcon />} colorScheme='gray' onClick={handleButtonClick}>
+      Reload
+    </Button>
   )
 };
 

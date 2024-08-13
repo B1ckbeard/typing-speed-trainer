@@ -3,7 +3,8 @@ import Header from './components/Header';
 import TestText from './components/TestText';
 import TextInput from './components/TextInput';
 import Stats from './components/Stats';
-import ReloadButton from './components/ReloadButton';
+import Buttons from './components/Buttons';
+import ModalWindow from './components/modals';
 import { Box, Container } from '@chakra-ui/react'
 
 const App: React.FC = () => {
@@ -14,8 +15,9 @@ const App: React.FC = () => {
         <TestText />
         <TextInput />
         <Stats />
-        <ReloadButton />
+        <Buttons />
       </Container>
+      <ModalWindow/>
     </Box>
   );
 };
