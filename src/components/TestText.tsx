@@ -5,6 +5,8 @@ import { Box, Text } from '@chakra-ui/react'
 const TestText: React.FC = () => {
   const {text, inputText } = useAppSelector((state) => state.textSlice);
 
+  // сравнение ввода пользователя с текстом.
+  // стилизация для правильно и неправильно введенных символов
   const getColoredText = useMemo((): JSX.Element[] => {
     return text.split('').map((char, index) => {
       if (index < inputText.length) {

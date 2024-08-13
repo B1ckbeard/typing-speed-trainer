@@ -40,14 +40,17 @@ const Stats: React.FC = () => {
   };
 
   useEffect(() => {
+    //запуск таймера, когда введен первый символ в поле ввода
     if (inputText.length > 0) {
       handleTimerStart();
     };
-
+    
+    //остановка таймера
     if (inputText.length >= text.length) {
       handleTimerStop();
     };
 
+    //подсчет ошибок при наборе текста
     dispatch(setMistakes(calculateErrors(inputText, text)));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputText])

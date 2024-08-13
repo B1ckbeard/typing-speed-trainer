@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../../hooks';
 import { closeModal } from '../../store/modalSlice'
-import { setText } from '../../store/textSlice';
+import { setText, setInputText } from '../../store/textSlice';
+import { setIsTimerOn, resetSeconds } from '../../store/timerSlice';
 
 import {
   Modal,
@@ -35,7 +36,10 @@ const TextModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
 
   const handleAddTextModal = () => {
     dispatch(setText(customText));
-    handleCloseModal();
+    dispatch(setInputText(''));
+    dispatch(setIsTimerOn(false));
+    dispatch(resetSeconds());
+    dispatch(closeModal());
   }
 
   return (
