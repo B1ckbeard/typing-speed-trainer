@@ -15,6 +15,7 @@ const TextInput: React.FC = () => {
     <Box w='100%' mb={4}>
       <Textarea w='100%' h='300px' fontSize='2xl'bgColor="white"
         autoFocus
+        spellCheck='false'
         placeholder='Type here...'
         value={inputText}
         onChange={e => handleChangeInput(e.target.value)}
