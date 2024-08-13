@@ -1,3 +1,6 @@
+## Typing speed trainer [(Link)](https://b1ckbeard.github.io/typing-speed-trainer/)
+### Tech Stack: React, TypeScript, Redux-toolkit, ChakraUI
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
