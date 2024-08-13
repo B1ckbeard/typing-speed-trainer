@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/typing-speed-trainer/static/css/main.e6c13ad2.css",
+    "main.js": "/typing-speed-trainer/static/js/main.1d5be55d.js",
+    "index.html": "/typing-speed-trainer/index.html",
+    "main.e6c13ad2.css.map": "/typing-speed-trainer/static/css/main.e6c13ad2.css.map",
+    "main.1d5be55d.js.map": "/typing-speed-trainer/static/js/main.1d5be55d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.1d5be55d.js"
+  ]
+}
