@@ -13,13 +13,14 @@ const TextInput: React.FC = () => {
 
   return (
     <Box w='100%' mb={4}>
-      <Textarea w='100%' h='300px' fontSize='2xl'bgColor="white"
+      <Textarea w='100%' h='200px' fontSize='xl'bgColor="white"
         autoFocus
         spellCheck='false'
         placeholder='Type here...'
         value={inputText}
         onChange={e => handleChangeInput(e.target.value)}
         rows={5}
+        focusBorderColor="gray.100"
       />
     </Box>
   )

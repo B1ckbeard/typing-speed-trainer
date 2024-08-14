@@ -3,7 +3,6 @@ import { useAppDispatch } from '../../hooks';
 import { closeModal } from '../../store/modalSlice'
 import { setText, setInputText } from '../../store/textSlice';
 import { setIsTimerOn, resetSeconds } from '../../store/timerSlice';
-
 import {
   Modal,
   ModalOverlay,

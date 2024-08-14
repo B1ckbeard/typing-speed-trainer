@@ -20,7 +20,7 @@ const TestText: React.FC = () => {
   
   return (
     <Box w='100%' mb={4} p={4} bgColor='gray.100' borderRadius='md'>
-      <Text fontSize='2xl'>{getColoredText}</Text>
+      <Text fontSize='xl'>{getColoredText}</Text>
     </Box>
   );
 };
